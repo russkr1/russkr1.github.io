@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>인재 | THE RUSS</title>
-<meta name="description" content="THE RUSS가 보유한 한-러 통번역·헤드헌팅 인적자원 네트워크를 카테고리별로 소개합니다.">
+<title>문의 | THE RUSS</title>
+<meta name="description" content="THE RUSS(더루스)에 한-러 비즈니스, 스포츠 에이전시, 대게·킹크랩 유통 등 제휴·프로젝트 문의를 남겨주세요.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23151515%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 font-family=%22Arial Black,sans-serif%22 fill=%22white%22 text-anchor=%22middle%22 font-weight=%22900%22>R</text></svg>">
 <style>
 :root{
@@ -114,19 +114,29 @@ footer .foot-bottom{border-top:1px solid rgba(255,255,255,0.12);padding-top:16px
 .reveal.in{opacity:1;transform:translateY(0);}
 
 
-#cats{background:#fff;}
-.cat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-bottom:56px;}
-@media (max-width:800px){ .cat-grid{grid-template-columns:1fr;} }
-.cat-card{border:1px solid var(--gray-300);border-radius:var(--radius);padding:30px 28px;background:#fff;position:relative;overflow:hidden;transition:box-shadow .2s ease,transform .2s ease;}
-.cat-card:hover{box-shadow:var(--shadow);transform:translateY(-3px);}
-.cat-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent);}
-.cat-icon{font-size:28px;margin-bottom:14px;display:block;}
-.cat-name{font-weight:800;font-size:18px;margin-bottom:10px;}
-.cat-desc{font-size:14px;color:var(--gray-700);}
-.cta-box{background:linear-gradient(160deg,var(--navy) 0%, var(--navy-dark) 100%);color:#fff;border-radius:var(--radius);padding:40px 44px;text-align:center;}
-.cta-box h3{margin:0 0 12px;font-size:20px;font-weight:800;}
-.cta-box p{margin:0 0 24px;opacity:.85;font-size:14.5px;max-width:560px;margin-left:auto;margin-right:auto;}
-.cta-box .btn-primary{background:var(--accent);color:#151515;box-shadow:none;}
+.page-hero-dark .page-hero-eyebrow{color:var(--accent);}
+#contact{background:var(--navy);color:#fff;}
+#contact .section-tag{color:#c9a24a;}
+#contact .section-desc{color:rgba(255,255,255,0.75);}
+.contact-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:48px;}
+@media (max-width:900px){ .contact-grid{grid-template-columns:1fr;} }
+.contact-steps{display:flex;flex-direction:column;}
+.step-item{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid rgba(255,255,255,0.12);}
+.step-item:last-child{border-bottom:none;}
+.step-num{flex:none;width:38px;height:38px;border-radius:50%;background:var(--accent);color:#151515;font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center;}
+.step-title{font-weight:800;font-size:15.5px;margin-bottom:4px;}
+.step-desc{font-size:13.5px;opacity:.78;line-height:1.6;}
+form.contact-form{background:#fff;color:var(--ink);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
+@media (max-width:500px){ .form-row{grid-template-columns:1fr;} }
+form.contact-form label{display:block;font-size:12.5px;font-weight:700;color:var(--gray-700);margin-bottom:6px;}
+form.contact-form input,form.contact-form textarea{
+  width:100%;padding:12px 14px;border:1px solid var(--gray-300);border-radius:9px;font-size:14.5px;font-family:inherit;
+  background:var(--gray-100);
+}
+form.contact-form textarea{resize:vertical;min-height:110px;}
+form.contact-form .btn-primary{width:100%;justify-content:center;margin-top:6px;}
+.form-note{font-size:12px;color:var(--gray-500);margin-top:12px;text-align:center;}
 </style>
 </head>
 <body>
@@ -152,21 +162,46 @@ footer .foot-bottom{border-top:1px solid rgba(255,255,255,0.12);padding-top:16px
 </header>
 
 
-<section class="page-hero">
+<section class="page-hero page-hero-dark">
   <div class="wrap">
-    <div class="page-hero-eyebrow" data-i18n="hero.tag">HUMAN NETWORK</div>
-    <h1 data-i18n="hero.title">통번역 · 헤드헌팅 인적자원 네트워크</h1>
-    <p data-i18n="hero.lead">더루스는 2019년부터 러시아·CIS 현지 오퍼레이션과 국내 콘텐츠 마케팅을 직접 수행하며 쌓아온 인적 네트워크를 카테고리별로 보유하고 있습니다. 프로젝트 성격에 맞는 인력을 소개·매칭해 드립니다.</p>
+    <div class="page-hero-eyebrow" data-i18n="hero.eyebrow">CONTACT</div>
+    <h1 data-i18n="hero.title">문의</h1>
+    <p data-i18n="hero.lead">제휴 및 프로젝트 문의는 아래 담당자 또는 문의 폼으로 연락 주세요.</p>
   </div>
 </section>
 
-<section id="cats">
+<section id="contact">
   <div class="wrap">
-    <div class="cat-grid" id="catGrid"></div>
-    <div class="cta-box reveal in">
-      <h3 data-i18n="cta.title">구체적인 프로필이 필요하신가요?</h3>
-      <p data-i18n="cta.body">카테고리별 상세 프로필과 포트폴리오는 문의 시 프로젝트 성격에 맞춰 안내해 드립니다.</p>
-      <a href="contact.html" class="btn btn-primary" data-i18n="cta.btn">문의하기</a>
+    <div class="section-tag" data-i18n="contact.tag">CONTACT</div>
+    <h2 class="section-title" data-i18n="contact.title">진행 프로세스</h2>
+    <p class="section-desc" data-i18n="contact.desc">제휴 및 프로젝트 문의는 아래 폼으로 남겨 주시면 순서대로 진행해 드립니다.</p>
+    <div class="contact-grid">
+      <div class="contact-steps" id="contactPeople"></div>
+      <form class="contact-form" action="https://formsubmit.co/russianst7@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="[THE RUSS] 홈페이지 문의">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="form-row">
+          <div>
+            <label data-i18n="contact.formName">이름</label>
+            <input type="text" name="이름" required>
+          </div>
+          <div>
+            <label data-i18n="contact.formContact">연락처(이메일/전화)</label>
+            <input type="text" name="연락처" required>
+          </div>
+        </div>
+        <div style="margin-bottom:14px;">
+          <label data-i18n="contact.formCompany">회사/기관명</label>
+          <input type="text" name="회사_기관명">
+        </div>
+        <div style="margin-bottom:14px;">
+          <label data-i18n="contact.formMessage">문의 내용</label>
+          <textarea name="문의내용" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" data-i18n="contact.formSubmit">문의 보내기</button>
+        <p class="form-note" data-i18n="contact.formNote">제출 시 담당자 이메일로 자동 전송됩니다.</p>
+      </form>
     </div>
   </div>
 </section>
@@ -198,17 +233,19 @@ const LOGO_WHITE = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKUAAABNCAYAAA
 const DATA = {
 ko:{
   nav:{about:"회사소개",business:"사업영역",portfolio:"사업사례",network:"네트워크",talent:"인재",contact:"문의"},
-  hero:{tag:"HUMAN NETWORK", title:"통번역 · 헤드헌팅 인적자원 네트워크",
-    lead:"더루스는 2019년부터 러시아·CIS 현지 오퍼레이션과 국내 콘텐츠 마케팅을 직접 수행하며 쌓아온 인적 네트워크를 카테고리별로 보유하고 있습니다. 프로젝트 성격에 맞는 인력을 소개·매칭해 드립니다."},
-  cta:{title:"구체적인 프로필이 필요하신가요?", body:"카테고리별 상세 프로필과 포트폴리오는 문의 시 프로젝트 성격에 맞춰 안내해 드립니다.", btn:"문의하기"},
-  cats:[
-    {icon:"🗣️",name:"통역 · 번역 파트",desc:"한-러 동시/순차통역 및 문서·영상 현지화를 담당하는 전문 인력 네트워크입니다."},
-    {icon:"🧭",name:"현지 코디네이터",desc:"러시아·CIS 현지 촬영, 팸투어, 행사 운영을 지원하는 코디네이터 네트워크입니다."},
-    {icon:"👤",name:"모델",desc:"광고·화보·영상 촬영에 투입 가능한 국내외 모델 네트워크입니다."},
-    {icon:"🎬",name:"크리에이터 · 인플루언서",desc:"여행·라이프스타일 중심의 국내 크리에이터·인플루언서 네트워크(약 100명)입니다."},
-    {icon:"🏅",name:"스포츠 전문인력",desc:"러시아·CIS 스포츠 에이전시 사업에 연계되는 코치·전문 트레이너 네트워크입니다."},
-    {icon:"🏢",name:"현지 파트너 · 에이전시",desc:"러시아·CIS 지역 사업 진출 및 파트너십 구축을 위한 현지 협력사 네트워크입니다."}
-  ],
+  hero:{eyebrow:"CONTACT", title:"문의", lead:"제휴 및 프로젝트 문의는 아래 담당자 또는 문의 폼으로 연락 주세요."},
+  contact:{
+    tag:"CONTACT", title:"진행 프로세스", desc:"제휴 및 프로젝트 문의는 아래 폼으로 남겨 주시면 순서대로 진행해 드립니다.",
+    formName:"이름", formContact:"연락처(이메일/전화)", formCompany:"회사/기관명", formMessage:"문의 내용",
+    formSubmit:"문의 보내기", formNote:"제출 시 담당자 이메일로 자동 전송됩니다.",
+    process:[
+      {title:"진행 확정",desc:"업체 정보와 견적서를 전달하고, 진행 방향을 확인합니다."},
+      {title:"맞춤형 컨설팅",desc:"고객 현황을 분석하고 솔루션을 제안, 기획안을 작성합니다."},
+      {title:"콘텐츠 제작",desc:"사업을 수행하며 콘텐츠를 제작합니다."},
+      {title:"송출 및 배포",desc:"채널을 선정하고 바이럴을 전개합니다."},
+      {title:"결과 공유",desc:"결과를 분석하고 공유해 드립니다."}
+    ]
+  },
   footer:{
     info:"THE RUSS(더루스) · 대표 이원석 · 사업자등록번호 714-20-01159<br>서울특별시 강남구 테헤란로 501, 5층 532호(삼성동, 브이플렉스)",
     copyright:"Copyright(C) The Russ. All rights reserved.",
@@ -217,17 +254,19 @@ ko:{
 },
 en:{
   nav:{about:"About",business:"Business",portfolio:"Portfolio",network:"Network",talent:"Talent",contact:"Contact"},
-  hero:{tag:"HUMAN NETWORK", title:"Translation & Headhunting Talent Network",
-    lead:"Since 2019, THE RUSS has built a categorized human network through direct on-the-ground operations in Russia/CIS and domestic content marketing. We introduce and match talent to fit each project."},
-  cta:{title:"Need a specific profile?", body:"Detailed profiles and portfolios by category are shared on request, tailored to your project.", btn:"Contact Us"},
-  cats:[
-    {icon:"🗣️",name:"Interpretation & Translation",desc:"Korean-Russian simultaneous/consecutive interpreters and a network for document & video localization."},
-    {icon:"🧭",name:"Local Coordinators",desc:"On-the-ground coordinators supporting shoots, fam trips and events across Russia and the CIS."},
-    {icon:"👤",name:"Models",desc:"A domestic and international model network available for ads, editorials and video shoots."},
-    {icon:"🎬",name:"Creators & Influencers",desc:"A network of ~100 travel & lifestyle creators/influencers in Korea."},
-    {icon:"🏅",name:"Sports Professionals",desc:"Coaches and specialized trainers connected to our Russia/CIS sports agency business."},
-    {icon:"🏢",name:"Local Partners & Agencies",desc:"A network of local partners for market entry and partnership-building in Russia and the CIS."}
-  ],
+  hero:{eyebrow:"CONTACT", title:"Contact", lead:"Leave a partnership or project inquiry via the form below and we'll take it from there."},
+  contact:{
+    tag:"CONTACT", title:"Our Process", desc:"Leave a partnership or project inquiry via the form below and we'll take it from there.",
+    formName:"Name", formContact:"Email / Phone", formCompany:"Company / Organization", formMessage:"Message",
+    formSubmit:"Send Inquiry", formNote:"Your message will be emailed directly to our team.",
+    process:[
+      {title:"Confirm the project",desc:"Share company info and a quote, and align on direction."},
+      {title:"Tailored consulting",desc:"We analyze your situation, propose a solution, and write the plan."},
+      {title:"Content production",desc:"We run the project and produce the content."},
+      {title:"Distribution",desc:"We select channels and roll out the campaign virally."},
+      {title:"Share results",desc:"We analyze and share the results with you."}
+    ]
+  },
   footer:{
     info:"THE RUSS · CEO Wonseok Lee · Business Reg. No. 714-20-01159<br>5F #532, 501 Teheran-ro, Gangnam-gu, Seoul, Korea (V-Flex, Samseong-dong)",
     copyright:"Copyright(C) The Russ. All rights reserved.",
@@ -236,17 +275,19 @@ en:{
 },
 ru:{
   nav:{about:"О нас",business:"Направления",portfolio:"Портфолио",network:"Сеть",talent:"Персонал",contact:"Контакты"},
-  hero:{tag:"КАДРОВАЯ СЕТЬ", title:"Кадровая сеть: перевод и хедхантинг",
-    lead:"С 2019 года THE RUSS формирует кадровую сеть по категориям, напрямую реализуя проекты в России/СНГ и контент-маркетинг в Корее. Мы подбираем и знакомим с персоналом под задачи проекта."},
-  cta:{title:"Нужен конкретный профиль?", body:"Подробные профили и портфолио по категориям предоставляются по запросу, с учётом вашего проекта.", btn:"Связаться"},
-  cats:[
-    {icon:"🗣️",name:"Перевод (устный/письменный)",desc:"Сеть синхронных/последовательных переводчиков корейский-русский и локализации документов и видео."},
-    {icon:"🧭",name:"Локальные координаторы",desc:"Координаторы на местах для съёмок, фэм-туров и мероприятий в России и СНГ."},
-    {icon:"👤",name:"Модели",desc:"Сеть моделей в Корее и за рубежом для рекламы, съёмок и видео."},
-    {icon:"🎬",name:"Креаторы и инфлюенсеры",desc:"Сеть из ~100 тревел- и лайфстайл-креаторов/инфлюенсеров в Корее."},
-    {icon:"🏅",name:"Спортивные специалисты",desc:"Тренеры и специалисты, связанные с нашим спортивным агентством в России/СНГ."},
-    {icon:"🏢",name:"Локальные партнёры и агентства",desc:"Сеть локальных партнёров для выхода на рынок и партнёрств в России и СНГ."}
-  ],
+  hero:{eyebrow:"КОНТАКТЫ", title:"Контакты", lead:"Оставьте заявку на партнёрство или проект через форму ниже — мы возьмём её в работу."},
+  contact:{
+    tag:"КОНТАКТЫ", title:"Как мы работаем", desc:"Оставьте заявку на партнёрство или проект через форму ниже — мы возьмём её в работу.",
+    formName:"Имя", formContact:"Email / телефон", formCompany:"Компания / организация", formMessage:"Сообщение",
+    formSubmit:"Отправить", formNote:"Сообщение будет отправлено напрямую на почту команды.",
+    process:[
+      {title:"Подтверждение проекта",desc:"Обмен информацией о компании и сметой, согласование направления."},
+      {title:"Индивидуальный консалтинг",desc:"Анализируем ситуацию клиента, предлагаем решение, готовим план."},
+      {title:"Производство контента",desc:"Реализуем проект и создаём контент."},
+      {title:"Продвижение и дистрибуция",desc:"Выбираем каналы и запускаем вирусное распространение."},
+      {title:"Обмен результатами",desc:"Анализируем и делимся результатами."}
+    ]
+  },
   footer:{
     info:"THE RUSS · Директор Ли Вонсок · Рег. номер 714-20-01159<br>5F #532, 501 Teheran-ro, Gangnam-gu, Seoul, Korea (V-Flex, Samseong-dong)",
     copyright:"Copyright(C) The Russ. All rights reserved.",
@@ -329,19 +370,21 @@ function initHeaderShadow(){
 }
 
 
-function renderCats(lang){
-  document.getElementById("catGrid").innerHTML = DATA[lang].cats.map(c=>`
-    <div class="cat-card reveal in">
-      <span class="cat-icon">${c.icon}</span>
-      <div class="cat-name">${c.name}</div>
-      <div class="cat-desc">${c.desc}</div>
+function renderContact(lang){
+  document.getElementById("contactPeople").innerHTML = DATA[lang].contact.process.map((s,i)=>`
+    <div class="step-item reveal in">
+      <div class="step-num">${i+1}</div>
+      <div>
+        <div class="step-title">${s.title}</div>
+        <div class="step-desc">${s.desc}</div>
+      </div>
     </div>`).join("");
 }
 
 function setLang(lang){
   currentLang = lang;
   renderStaticText(lang);
-  renderCats(lang);
+  renderContact(lang);
   syncLangUI(lang);
 }
 setLang(getInitialLang());
